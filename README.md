@@ -4,3 +4,6 @@
 
 
 [![Maintainability](https://codeclimate.com/github/Denis09031997/python-project-49/maintainability)](https://api.codeclimate.com/v1/badges/1a1672f6a852b8daf702/maintainability)
+
+
+[![asciinema](https://asciinema.org/a/HklCufok8ueHp1529PAQmBrcD)]

@@ -14,23 +14,17 @@ def play():
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
         if answer != 'yes' and answer != 'no':
-            return(f'{answer} is wrong answer ;(. Let\'s try again, {name}!')
+            return (f'{answer} is wrong answer ;(. Let\'s try again, {name}!')
         elif num % 2 == 0 and answer == 'yes':
             print('Correct!')
         elif num % 2 != 0 and answer == 'no':
             print('Correct!')
         elif num % 2 != 0 and answer == 'yes':
-            return(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
+            return (f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
         elif num % 2 == 0 and answer == 'no':
-            return(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
+            return (f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
         i = i + 1
-    return(f'Congratulations, {name}')
-
+    return (f'Congratulations, {name}')
 
 
 print(play())
-
-
-
-
-

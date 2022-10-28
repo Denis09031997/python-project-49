@@ -5,7 +5,7 @@ import prompt
 print('Welcome to the Brain Games!')
 
 
-def play():
+def play_brain_even():
     i = 0
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\nAnswer "yes" if the number is even, otherwise answer "no".')
@@ -27,4 +27,4 @@ def play():
     return (f'Congratulations, {name}')
 
 
-print(play())
+print(play_brain_even())

@@ -1,41 +1,27 @@
+# Получаем рандомное число любое
 import random
+from re import I
 
 
+random_num = random.randint(2, 30)
+print(f'Получили рандомное число: {random_num}')
 
-# Формируем ряд случайных чисел
-row_length = random.randint(5, 10)
-print(f'Длина ряда будет - {row_length}')
-series_num = []
-start_num = random.randint(1, 100)
-print(f'Стартовое число будет: {start_num}')
-series_num.append(start_num)
-print(f'Ряд чисел будет начинаться с: {series_num}')
-interval = random.randint(1, 5)
-print(f'Интервал будет - {interval}')
+# узнать на какие числа делится без остатка
+dividers = []
 
-i = 0
+i = 1
 
-while len(series_num) < row_length:
-    series_num.append(series_num[-1] + interval)
-
-print(f'Итоговый список случайных чисел: {series_num}')
-#print((' '.join(map(str, series_num))))
+while i <= random_num:
+    if random_num % i == 0:
+        dividers.append(i)
+    i = i + 1
 
 
-# пропускаем случайное число в ряду
-print('-----------------------------')
-index_missing = random.randint(0, len(series_num))
-print('Индекс пропущенного числа - ' + str(index_missing))
-print(f'Пропущенное число из списка: {series_num} это - {series_num[index_missing]}')
-row_missing_num = series_num
-print(f'Предитог: {row_missing_num}')
-row_missing_num[index_missing] = '..'
-line_row = ' '.join(map(str, series_num))
-print('Строчка чисел с пропуском - ' + line_row)
+print(f'Список делителй числа {random_num} : {dividers}')
 
-    
-
-#print(series_num)
-#print(' '.join(map(str, series_num)))
-
-#-------------------
+if len(dividers) == 2:
+    result = 'yes'
+    print(result)
+else:
+    result = 'no'
+    print(result)

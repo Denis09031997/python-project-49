@@ -28,7 +28,3 @@ def play_brain_even():
 
 
 print(play_brain_even())
-
-
-if __name__ == '__main__':
-    main()

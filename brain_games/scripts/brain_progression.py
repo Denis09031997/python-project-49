@@ -31,4 +31,5 @@ def play_progression():
             break
         i = i + 1
 
+
 print(play_progression())

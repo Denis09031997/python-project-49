@@ -34,6 +34,4 @@ def play_gcd():
         index = index + 1
 
 
-
 print(play_gcd())
-        

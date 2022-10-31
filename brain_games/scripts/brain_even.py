@@ -2,7 +2,6 @@ import random
 import prompt
 
 
-
 def play_brain_even():
     print('Welcome to the Brain Games!')
     i = 0

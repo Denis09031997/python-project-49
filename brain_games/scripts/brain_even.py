@@ -25,4 +25,5 @@ def play_brain_even():
     return (f'Congratulations, {name}')
 
 
-print(play_brain_even())
+if __name__ == '__main__':
+    play_brain_even()

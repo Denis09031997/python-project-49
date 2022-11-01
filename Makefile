@@ -24,4 +24,4 @@ lint:
 
 
 brain-even:
-	poetry run brain_even
+	poetry run brain-even

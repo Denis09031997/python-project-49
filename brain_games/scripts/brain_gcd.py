@@ -2,10 +2,8 @@ import random
 import prompt
 
 
-print('Welcome to the Brain Games!')
-
-
-def play_gcd():
+def main():
+    print('Welcome to the Brain Games!')
     index = 0
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\nFind the greatest common divisor of given numbers.')
@@ -34,4 +32,5 @@ def play_gcd():
         index = index + 1
 
 
-print(play_gcd())
+if __name__ == '__main__':
+    main()

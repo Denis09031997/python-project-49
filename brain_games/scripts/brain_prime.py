@@ -2,10 +2,8 @@ import prompt
 import random
 
 
-print('Welcome to the Brain Games!')
-
-
-def play_prime():
+def main():
+    print('Welcome to the Brain Games!')
     i = 0
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\nAnswer "yes" if given number is prime. Otherwise answer "no".')
@@ -33,4 +31,5 @@ def play_prime():
         i = i + 1
 
 
-print(play_prime())
+if __name__ == '__main__':
+    main()

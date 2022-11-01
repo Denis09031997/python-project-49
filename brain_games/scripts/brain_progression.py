@@ -2,10 +2,8 @@ import random
 import prompt
 
 
-print('Welcome to the Brain Games!')
-
-
-def play_progression():
+def main():
+    print('Welcome to the Brain Games!')
     i = 0
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\nWhat number is missing in the progression?.')
@@ -32,4 +30,5 @@ def play_progression():
         i = i + 1
 
 
-print(play_progression())
+if __name__ == '__main__':
+    main()

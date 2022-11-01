@@ -2,7 +2,7 @@ import random
 import prompt
 
 
-def play_brain_even():
+def main():
     print('Welcome to the Brain Games!')
     i = 0
     name = prompt.string('May I have your name? ')
@@ -26,4 +26,4 @@ def play_brain_even():
 
 
 if __name__ == '__main__':
-    play_brain_even()
+    main()

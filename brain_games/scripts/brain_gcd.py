@@ -30,6 +30,8 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{remains[-1]}'\nLet's try again, {name}")
             break
         index = index + 1
+    if index == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':

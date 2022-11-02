@@ -29,6 +29,8 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}")
             break
         i = i + 1
+    if i == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':

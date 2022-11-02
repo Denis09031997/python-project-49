@@ -15,7 +15,7 @@ def main():
         interval = random.randint(1, 5)
         while len(series_num) < row_length:
             series_num.append(series_num[-1] + interval)
-        index_missing = random.randint(0, len(series_num))
+        index_missing = random.randint(0, len(series_num) - 1)
         search_num = series_num[index_missing]
         row_missing_num = series_num
         row_missing_num[index_missing] = '..'

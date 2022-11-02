@@ -12,17 +12,21 @@ def main():
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
         if answer != 'yes' and answer != 'no':
-            return (f'{answer} is wrong answer ;(. Let\'s try again, {name}!')
+            print(f'{answer} is wrong answer ;(. Let\'s try again, {name}!')
+            break
         elif num % 2 == 0 and answer == 'yes':
             print('Correct!')
         elif num % 2 != 0 and answer == 'no':
             print('Correct!')
         elif num % 2 != 0 and answer == 'yes':
-            return (f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
+            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
+            break
         elif num % 2 == 0 and answer == 'no':
-            return (f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
+            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
+            break
         i = i + 1
-    print(f'Congratulations, {name}!')
+    if i == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':

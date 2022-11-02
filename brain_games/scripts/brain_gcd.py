@@ -30,7 +30,7 @@ def main():
                 result = remains[-1]
                 i = i + 1
                 j = j + 1
-        if result == int(answer):
+        if int(answer) == result:
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}!")

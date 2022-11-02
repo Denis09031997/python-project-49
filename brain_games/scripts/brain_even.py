@@ -22,7 +22,7 @@ def main():
         elif num % 2 == 0 and answer == 'no':
             return (f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
         i = i + 1
-    print(f'Congratulations, {name}')
+    print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':

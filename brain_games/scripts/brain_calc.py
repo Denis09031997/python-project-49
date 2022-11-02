@@ -23,7 +23,7 @@ def main():
         if int(answer) == int(result):
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}!")
             break
         i = i + 1
     if i == 3:

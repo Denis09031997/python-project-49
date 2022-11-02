@@ -27,7 +27,7 @@ def main():
         if int(answer) == remains[-1]:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{remains[-1]}'\nLet's try again, {name}")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{remains[-1]}'\nLet's try again, {name}!")
             break
         index = index + 1
     if index == 3:

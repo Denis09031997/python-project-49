@@ -26,7 +26,7 @@ def main():
         elif answer == 'no' and len(dividers) != 2:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}!")
             break
         i = i + 1
     if i == 3:

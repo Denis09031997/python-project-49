@@ -5,6 +5,7 @@ import prompt
 def main():
     print('Welcome to the Brain Games!')
     index = 0
+    result = 0
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\nFind the greatest common divisor of given numbers.')
     while index < 3:

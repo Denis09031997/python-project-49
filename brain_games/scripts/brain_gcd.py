@@ -17,6 +17,8 @@ def main():
         answer = prompt.string('Your answer: ')
         if list_num[0] % list_num[1] == 0 and list_num[1] % list_num[1] == 0:
             result = list_num[1]
+        elif (list_num[0] % list_num[1]) % (list_num[1] % (list_num[0] % list_num[1])) == 0:
+            result = (list_num[1] % (list_num[0] % list_num[1]))
         else:
             remains = []
             remains.append(list_num[0] % list_num[1])

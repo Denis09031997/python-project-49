@@ -21,11 +21,11 @@ def main():
             print('Correct!')
         elif num % 2 != 0 and answer == 'yes':
             print(f"'yes' is wrong answer ;(. Correct answer "
-            "was 'no'.\nLet's try again, {name}!")
+            f"was 'no'.\nLet's try again, {name}!")
             break
         elif num % 2 == 0 and answer == 'no':
             print(f"'no' is wrong answer ;(. Correct answer "
-            "was 'yes'.\nLet's try again, {name}!")
+            f"was 'yes'.\nLet's try again, {name}!")
             break
         i = i + 1
     if i == 3:

@@ -18,13 +18,15 @@ def main():
             result = num1 + num2
         elif op == '-':
             result = num1 - num2
-        elif op == '*':
+        else:
             result = num1 * num2
         if int(answer) == int(result):
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct "
-            f"answer was '{result}'\nLet's try again, {name}!")
+            print(
+                f"'{answer}' is wrong answer ;(. Correct "
+                f"answer was '{result}'\nLet's try again, {name}!"
+            )
             break
         i = i + 1
     if i == 3:

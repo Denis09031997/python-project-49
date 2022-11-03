@@ -5,27 +5,27 @@ import prompt
 def main():
     print('Welcome to the Brain Games!')
     i = 0
+    result = ''
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\nAnswer "yes" if the number is even, '
-    'otherwise answer "no".')
+    print(
+        f'Hello, {name}!\nAnswer "yes" if the number is even, '
+        'otherwise answer "no".'
+    )
     while i < 3:
         num = random.randint(1, 100)
+        if num % 2 == 0:
+            result = 'yes'
+        else:
+            result = 'no'
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
-        if answer != 'yes' and answer != 'no':
-            print(f'{answer} is wrong answer ;(. Let\'s try again, {name}!')
-            break
-        elif num % 2 == 0 and answer == 'yes':
+        if answer == result:
             print('Correct!')
-        elif num % 2 != 0 and answer == 'no':
-            print('Correct!')
-        elif num % 2 != 0 and answer == 'yes':
-            print(f"'yes' is wrong answer ;(. Correct answer "
-            f"was 'no'.\nLet's try again, {name}!")
-            break
-        elif num % 2 == 0 and answer == 'no':
-            print(f"'no' is wrong answer ;(. Correct answer "
-            f"was 'yes'.\nLet's try again, {name}!")
+        else:
+            print(
+                f"{answer} is wrong answer ;(. Correct answer "
+                f"was {result}.\nLet's try again, {name}!"
+            )
             break
         i = i + 1
     if i == 3:

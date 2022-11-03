@@ -2,12 +2,15 @@ import prompt
 import random
 
 
-def main():
+def main():# noqa:  C901
     print('Welcome to the Brain Games!')
     i = 0
+    result = ''
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\nAnswer "yes" if given number '
-    'is prime. Otherwise answer "no".')
+    print(
+        f'Hello, {name}!\nAnswer "yes" if given number '
+        'is prime. Otherwise answer "no".'
+    )
     while i < 3:
         random_num = random.randint(2, 30)
         dividers = []
@@ -22,13 +25,13 @@ def main():
             result = 'no'
         print(f'Question: {random_num}')
         answer = prompt.string('Your answer: ')
-        if answer == 'yes' and len(dividers) == 2:
-            print('Correct!')
-        elif answer == 'no' and len(dividers) != 2:
+        if answer == result:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct "
-            f"answer was '{result}'\nLet's try again, {name}!")
+            print(
+                f"'{answer}' is wrong answer ;(. Correct "
+                f"answer was '{result}'\nLet's try again, {name}!"
+            )
             break
         i = i + 1
     if i == 3:
